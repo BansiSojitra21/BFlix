@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap4.css">
+    <link rel="stylesheet" href="bootstrap5.css">
+    <Script src="jquery-3.7.1.min.js"></Script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="AboutUs.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <nav>
+        <logo id="bflix">BFlix</logo>
+        <div class="navLinkWrap">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="Sign in.html">Sign in</a></li>
+            </ul>
+        </div>
+    </nav><br><br><br>
+    <div id="background">
+        <h3 id="abtus" class="col-md-4">About Us</h3>
+        <img src="Images/preview.webp" alt="back" class=" offset-md-1 col-md-6" id="back">
+        
+    </div><br><br>
+    <h4>Wide Range of Movies</h4><br>
+    <div class="row">
+        <div class="offset-md-1 col-md-5">
+            <img src="Images/ss.png" alt="ss">
+        </div>
+        <div class="col-md-5">
+
+            <p> BFlix offers a rich and diverse collection of movies from every genre — action, Thriller, drama, horror,
+                Biography, comedy, animation, and more. From iconic classics to fresh new releases, we have something
+                for every taste.</p>
+        </div>
+    </div><br><br><br>
+    <h4>Community Connection</h4><br>
+    <div class="row">
+        <div class="offset-md-1 col-md-5">
+
+            <p> Have questions or need help? Our dedicated support team and active movie-loving community are always
+                here to assist you.
+                Connect with others, share your opinions, and get help through email, or community forums.
+            </p>
+        </div>
+        <div class="offset-md-1 col-md-5">
+            <img src="Images/Community2.png" alt="ss">
+        </div>
+
+    </div><br><br><br>
+    <h4>Safety</h4><br>
+    <div class="row">
+        <div class="offset-md-1 col-md-5">
+            <img src="Images/safety.webp" alt="ss">
+        </div>
+        <div class="col-md-5">
+            <p> At BFlix, your data privacy and account security are our top priorities.
+                We use encrypted connections and secure authentication to keep your information safe.
+                Your viewing habits and personal details are never shared without your consent.
+            </p>
+        </div>
+    </div><br><br><br>
+    <h4>About Our Company</h4><br>
+    <div class="row">
+        <div class="offset-md-1 col-md-5">
+            <p> BFlix Media is a digital entertainment company focused on delivering high-quality movie content to
+                audiences worldwide.
+                We aim to blend technology and creativity to create a seamless cinematic experience.
+                Founded by a team of film enthusiasts and tech experts, BFlix is built for viewers, by viewers.</p>
+        </div>
+        <div class="offset-md-1 col-md-5">
+            <img src="Images/bflix.webp" alt="ss">
+        </div>
+
+    </div><br><br><br>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html">Home</a><br>
+                <a href="Movies.html">Movies</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="About us.html">About Us</a><br>
+                <a href="Sign in.html">Sign In</a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#">
+                    <img src="Images/insta.png" alt="insta">
+                    <img src="Images/ldin.png" alt="ldin"><br>
+                    <img src="Images/fb.png" alt="fb">
+                    <img src="Images/twitter.png" alt="twitter">
+                </a></li>
+        </ul>
+    </footer>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var nav = $("nav");
+                // nav.toggleClass("scrolled",$(this).scrollTop()>nav.height());
+                if ($(this).scrollTop() > 10) {
+                    nav.addClass("scrolled");
+                } else {
+                    nav.removeClass("scrolled");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
